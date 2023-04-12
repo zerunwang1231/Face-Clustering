@@ -1,26 +1,48 @@
 Folders:
+
+
 even26: dataset
+
 externel_models: downloaded from dlib documents for building detectors and other necessary objects under dlib.
+
 detect_result: face detection results using CNN method from dlib
+
 detect_result_FN: face detection result using facenet
+
 encodings: face encodings by dlib
+
 encodings_FN: face encodings by facenet
+
 output_chips_cwc: face chaips classification using dlib.chinese_whispers_clustering()
+
 output_imagess_cwc: image classification using dlib.chinese_whispers_clustering(), one to one with output_chips_cwc
+
 output_chips: face chaips classification using AgglomerativeClustering() 
+
 output_images: image classification using AgglomerativeClustering(), one to one with output_chips
+
 output_chips_refine: face chaips classification using AgglomerativeClustering(). Hyperparamter n_clusters is tuned based on Silhouette score
+
 output_images_refine: image classification using AgglomerativeClustering(), one to one with output_chips. Hyperparamter n_clusters is tuned based on Silhouette score
+
 output_chips_FN: face chaips classification using AgglomerativeClustering() and facenet
+
 output_images_FN: image classification using AgglomerativeClustering() and facenet, one to one with output_chips 
 
 
 
+
 Python files:
+
+
 main.py:  main python file using dlib. 
+
 utils.py: contains all functions based on dlib
+
 main_FN.py:  main python file using facenet. 
+
 utils_FN.py: contains all functions based on facenet
+
 performance_eval.py: performance evaluation
 
 
